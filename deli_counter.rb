@@ -1,8 +1,8 @@
 # Write your code here.
 katz_deli = []
+number_day = 1
 
-def take_a_number(katz_deli)
-  number_day = 1
+def take_a_number(katz_deli)  
   katz_deli <<  number_day
   line_num = katz_deli.length
   puts "Welcome you are number #{line_num} in line."
