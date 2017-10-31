@@ -26,11 +26,10 @@ def line(katz_deli)
 end
 
 def now_serving(katz_deli)
-  number = katz_deli[0]
+  number = katz_deli.shift #katz_deli[0]
   if number === nil
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{number}."
-    katz_deli.shift
   end
 end
