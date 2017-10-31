@@ -1,10 +1,11 @@
 # Write your code here.
 katz_deli = []
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
+def take_a_number(katz_deli)
+  number_day += 1 
+  katz_deli <<  number_day
   line_num = katz_deli.length
-  puts "Welcome, #{name}. You are number #{line_num} in line."
+  puts "Welcome you are number #{line_num} in line."
 end
 
 def line(katz_deli)
@@ -16,8 +17,8 @@ def line(katz_deli)
     i = 0
     while i < katz_deli.length
       line_num = i + 1
-      line_name = katz_deli[i]
-      line_str << " #{line_num}. #{line_name}"
+      number = katz_deli[i]
+      line_str << " #{line_num}. #{number}"
       i +=1
     end
     puts line_str
@@ -25,11 +26,11 @@ def line(katz_deli)
 end
 
 def now_serving(katz_deli)
-  person = katz_deli[0]
-  if person === nil
+  number = katz_deli[0]
+  if number === nil
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{person}."
+    puts "Currently serving #{number}."
     katz_deli.shift
   end
 end
